@@ -51,7 +51,7 @@ In this step, you'll connect your workspace to external services using MCP serve
 
 - **Steps:**
   1. Open the `mcp.json` file in your workspace root (either inside .vscode or .cursor).
-  2. Paste the following configuration (replace placeholders as needed):
+  1. Paste the following configuration (replace placeholders as needed):
 
     For VS Code:
 
@@ -73,17 +73,46 @@ In this step, you'll connect your workspace to external services using MCP serve
         }
         }
      ```
+
     For Cursor
-    ```
+
+    ```json
+    {
+      "servers": {
+          "github-remote": {
+              "type": "http",
+              "url": "https://api.githubcopilot.com/mcp/",
+              "headers": {
+                  "Authorization": "Bearer ${input:github_mcp_pat}"
+              }
+          }
+      },
+      "atlassian": {
+          "command": "npx",
+          "args": [
+              "-y",
+              "mcp-remote",
+              "https://mcp.atlassian.com/v1/sse"
+          ]
+      },
+      "inputs": [
+          {
+              "type": "promptString",
+              "id": "github_mcp_pat",
+              "description": "GitHub Personal Access Token",
+              "password": true
+          }
+      ]
+    }
 
     ```
-    
-  4. Save the file.
-  5. _(Placeholder: Add more detailed instructions or screenshots for configuring MCP servers)_
+
+  1. Save the file.
+  1. _(Placeholder: Add more detailed instructions or screenshots for configuring MCP servers)_
 
 > **Tip:** Proper MCP configuration is essential for enabling AI agents and automations to interact with your repositories and tickets.
 
-## 3: Use case 1: Build a feature
+## 3: Build a feature
 
 Let's practice building a feature using your AI agent and MCP integration.
 
