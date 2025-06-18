@@ -47,9 +47,6 @@ project.fragment.lock.json
 artifacts/
 **/Properties/launchSettings.json
 
-# VS Code
-.vscode/
-
 *_i.c
 *_p.c
 *_i.h
@@ -287,3 +284,5 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
+
+docs/

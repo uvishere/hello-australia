@@ -1,0 +1,16 @@
+{
+    "mcpServers": {
+        "github-mcp-remote": {
+            "url": "https://api.githubcopilot.com/mcp/",
+            "authorization_token": "Bearer YOUR_GITHUB_PAT"
+        },
+        "atlassian": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "mcp-remote",
+                "https://mcp.atlassian.com/v1/sse"
+            ]
+        }
+    }
+}

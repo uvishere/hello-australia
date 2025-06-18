@@ -36,11 +36,19 @@ To run all automated tests (in the Tests/HelloAustralia.Tests project):
 dotnet test
 ```
 
-## Contributing
 
-- Add new endpoints or features in `Program.cs`
-- Add or update tests in the `Tests/HelloAustralia.Tests` project
 
 ---
 
 This project is part of a hands-on workshop to improve .NET and AI agent skills.
+
+---
+
+### contributors only
+
+#### Deploy
+
+1. Install claat
+2. from root working directory run `claat export -o ./docs/ CLAAT.md`
+3. Once exported, go inside the `docs/hello-australia-workshop` folder
+4. Run `gcloud storage cp -r * gs://hello-australia.uvishere.com`

@@ -1,0 +1,27 @@
+{
+    "servers": {
+        "github-remote": {
+            "type": "http",
+            "url": "https://api.githubcopilot.com/mcp/",
+            "headers": {
+                "Authorization": "Bearer ${input:github_mcp_pat}"
+            }
+        }
+    },
+    "atlassian": {
+        "command": "npx",
+        "args": [
+            "-y",
+            "mcp-remote",
+            "https://mcp.atlassian.com/v1/sse"
+        ]
+    },
+    "inputs": [
+        {
+            "type": "promptString",
+            "id": "github_mcp_pat",
+            "description": "GitHub Personal Access Token",
+            "password": true
+        }
+    ]
+}
