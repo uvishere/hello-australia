@@ -7,7 +7,7 @@ authors: Yuba Raj (UV) Panta
 categories: AI, .net
 environments: dotnet, AI, Github
 status: **Published**
-feedback link: [https://github.com/uvishere/event-planner-adk/issues/new](https://github.com/uvishere/event-planner-adk/issues/new)
+feedback link: [https://github.com/uvishere/event-planner-adk/issues/new](https://github.com/uvishere/hello-australia/issues/new)
 duration: 60
 url: <https://hello-australia.uvishere.com>
 theme: googlecloud
@@ -37,8 +37,8 @@ Before you begin, make sure you have the following:
 Follow these steps to set up your development environment:
 
 1. **Login to Coder:** Go to [Coder](https://coder.pageupinternal.cloud) and sign in with your credentials.
-2. **Create a workspace:** Use the "AI Workbench" template to create a new workspace. This template comes pre-configured with the tools you'll need.
-3. **Open your code editor:** Launch VS Code, Cursor, or your preferred editor. Make sure it is connected to your Coder workspace.
+2. **Create a workspace:** Use the ".NET Workbench" template to create a new workspace. This template comes pre-configured with the tools you'll need.
+3. **Open your code editor:** Launch VS Code or Cursor. Make sure it is connected to your Coder workspace.
 4. _(Optional Placeholder: Add screenshots or a video walkthrough for workspace setup)_
 
 > **Why this matters:** Setting up your workspace correctly ensures you have all the tools and permissions needed for the rest of the workshop.
@@ -53,7 +53,7 @@ In this step, you'll connect your workspace to external services using MCP serve
   1. Open the `mcp.json` file in your workspace root (either inside .vscode or .cursor).
   1. Paste the following configuration (replace placeholders as needed):
 
-    For VS Code:
+    For Cursor:
 
      ```json
         {
@@ -74,7 +74,7 @@ In this step, you'll connect your workspace to external services using MCP serve
         }
      ```
 
-    For Cursor
+    For VS Code
 
     ```json
     {
@@ -107,7 +107,8 @@ In this step, you'll connect your workspace to external services using MCP serve
 
     ```
 
-  1. Save the file.
+  1. Save the file. Alternatively, there's already a file created so you don't have to do anything. Just click on start 🙂
+  1. Check if the servers have started and are listing the MCP tools. You can check by asking the copilot or Cursor in Agent mode directly.
   1. _(Placeholder: Add more detailed instructions or screenshots for configuring MCP servers)_
 
 > **Tip:** Proper MCP configuration is essential for enabling AI agents and automations to interact with your repositories and tickets.
